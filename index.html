@@ -1,0 +1,147 @@
+<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=description content="A Material Design theme for MkDocs"><link href=https://squidfunk.github.io/mkdocs-material/ rel=canonical><meta name=author content="Martin Donath"><meta name=lang:clipboard.copy content="Copy to clipboard"><meta name=lang:clipboard.copied content="Copied to clipboard"><meta name=lang:search.language content=en><meta name=lang:search.pipeline.stopwords content=True><meta name=lang:search.pipeline.trimmer content=True><meta name=lang:search.result.none content="No matching documents"><meta name=lang:search.result.one content="1 matching document"><meta name=lang:search.result.other content="# matching documents"><meta name=lang:search.tokenizer content=[\s\-]+><link rel="shortcut icon" href=assets/images/favicon.png><meta name=generator content="mkdocs-1.0.4, mkdocs-material-4.4.2"><title>Material for MkDocs</title><link rel=stylesheet href=assets/stylesheets/application.4031d38b.css><link rel=stylesheet href=assets/stylesheets/application-palette.3e3d1dff.css><meta name=theme-color content=#3f51b5><script src=assets/javascripts/modernizr.74668098.js></script><link href=https://fonts.gstatic.com rel=preconnect crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback"><style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style><link rel=stylesheet href=assets/fonts/material-icons.css><script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script><script async src=https://www.google-analytics.com/analytics.js></script></head> <body dir=ltr data-md-color-primary=indigo data-md-color-accent=indigo> <svg class=md-svg> <defs> <svg xmlns=http://www.w3.org/2000/svg width=416 height=448 viewbox="0 0 416 448" id=__github><path fill=currentColor d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg> </defs> </svg> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay data-md-component=overlay for=__drawer></label> <a href=#1-mean tabindex=1 class=md-skip> Skip to content </a> <header class=md-header data-md-component=header> <nav class="md-header-nav md-grid"> <div class=md-flex> <div class="md-flex__cell md-flex__cell--shrink"> <a href=https://squidfunk.github.io/mkdocs-material/ title="Material for MkDocs" class="md-header-nav__button md-logo"> <i class=md-icon></i> </a> </div> <div class="md-flex__cell md-flex__cell--shrink"> <label class="md-icon md-icon--menu md-header-nav__button" for=__drawer></label> </div> <div class="md-flex__cell md-flex__cell--stretch"> <div class="md-flex__ellipsis md-header-nav__title" data-md-component=title> <span class=md-header-nav__topic> Material for MkDocs </span> <span class=md-header-nav__topic> Material </span> </div> </div> <div class="md-flex__cell md-flex__cell--shrink"> <label class="md-icon md-icon--search md-header-nav__button" for=__search></label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=query data-md-state=active> <label class="md-icon md-search__icon" for=__search></label> <button type=reset class="md-icon md-search__icon" data-md-component=reset tabindex=-1> &#xE5CD; </button> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=result> <div class=md-search-result__meta> Type to start searching </div> <ol class=md-search-result__list></ol> </div> </div> </div> </div> </div> </div> <div class="md-flex__cell md-flex__cell--shrink"> <div class=md-header-nav__source> <a href=https://github.com/squidfunk/mkdocs-material title="Go to repository" class=md-source data-md-source=github> <div class=md-source__icon> <svg viewbox="0 0 24 24" width=24 height=24> <use xlink:href=#__github width=24 height=24></use> </svg> </div> <div class=md-source__repository> squidfunk/mkdocs-material </div> </a> </div> </div> </div> </nav> </header> <div class=md-container> <nav class=md-tabs data-md-component=tabs> <div class="md-tabs__inner md-grid"> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=. class="md-tabs__link md-tabs__link--active"> Material </a> </li> <li class=md-tabs__item> <a href=extensions/admonition/ class=md-tabs__link> Extensions </a> </li> </ul> </div> </nav> <main class=md-main role=main> <div class="md-main__inner md-grid" data-md-component=container> <div class="md-sidebar md-sidebar--primary" data-md-component=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary" data-md-level=0> <label class="md-nav__title md-nav__title--site" for=__drawer> <a href=https://squidfunk.github.io/mkdocs-material/ title="Material for MkDocs" class="md-nav__button md-logo"> <i class=md-icon></i> </a> Material for MkDocs </label> <div class=md-nav__source> <a href=https://github.com/squidfunk/mkdocs-material title="Go to repository" class=md-source data-md-source=github> <div class=md-source__icon> <svg viewbox="0 0 24 24" width=24 height=24> <use xlink:href=#__github width=24 height=24></use> </svg> </div> <div class=md-source__repository> squidfunk/mkdocs-material </div> </a> </div> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--active"> <input class="md-toggle md-nav__toggle" data-md-toggle=toc type=checkbox id=__toc> <label class="md-nav__link md-nav__link--active" for=__toc> Material </label> <a href=. title=Material class="md-nav__link md-nav__link--active"> Material </a> <nav class="md-nav md-nav--secondary"> <label class=md-nav__title for=__toc>Table of contents</label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=#1-mean class=md-nav__link> 1. Mean </a> </li> <li class=md-nav__item> <a href=#2-median class=md-nav__link> 2. Median </a> </li> <li class=md-nav__item> <a href=#3-modus class=md-nav__link> 3. Modus </a> </li> <li class=md-nav__item> <a href=#4-standar-deviasi class=md-nav__link> 4. Standar Deviasi </a> </li> <li class=md-nav__item> <a href=#5-varian class=md-nav__link> 5. Varian </a> <nav class=md-nav> <ul class=md-nav__list> <li class=md-nav__item> <a href=#6-skewness-kemiringan class=md-nav__link> 6. Skewness (Kemiringan) </a> </li> <li class=md-nav__item> <a href=#7-kuartil class=md-nav__link> 7. Kuartil </a> <nav class=md-nav> <ul class=md-nav__list> <li class=md-nav__item> <a href=#-kuartil-1-q1 class=md-nav__link> **-&gt;**Kuartil 1 (Q1) </a> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=getting-started/ title="Getting started" class=md-nav__link> Getting started </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-3 type=checkbox id=nav-3> <label class=md-nav__link for=nav-3> Extensions </label> <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-3> Extensions </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=extensions/admonition/ title=Admonition class=md-nav__link> Admonition </a> </li> <li class=md-nav__item> <a href=extensions/codehilite/ title=CodeHilite class=md-nav__link> CodeHilite </a> </li> <li class=md-nav__item> <a href=extensions/footnotes/ title=Footnotes class=md-nav__link> Footnotes </a> </li> <li class=md-nav__item> <a href=extensions/metadata/ title=Metadata class=md-nav__link> Metadata </a> </li> <li class=md-nav__item> <a href=extensions/permalinks/ title=Permalinks class=md-nav__link> Permalinks </a> </li> <li class=md-nav__item> <a href=extensions/pymdown/ title=PyMdown class=md-nav__link> PyMdown </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=specimen/ title=Specimen class=md-nav__link> Specimen </a> </li> <li class=md-nav__item> <a href=customization/ title=Customization class=md-nav__link> Customization </a> </li> <li class=md-nav__item> <a href=compliance/ title="Compliance with GDPR" class=md-nav__link> Compliance with GDPR </a> </li> <li class=md-nav__item> <a href=release-notes/ title="Release notes" class=md-nav__link> Release notes </a> </li> <li class=md-nav__item> <a href=authors-notes/ title="Author's notes" class=md-nav__link> Author's notes </a> </li> <li class=md-nav__item> <a href=contributing/ title=Contributing class=md-nav__link> Contributing </a> </li> <li class=md-nav__item> <a href=license/ title=License class=md-nav__link> License </a> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary"> <label class=md-nav__title for=__toc>Table of contents</label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=#1-mean class=md-nav__link> 1. Mean </a> </li> <li class=md-nav__item> <a href=#2-median class=md-nav__link> 2. Median </a> </li> <li class=md-nav__item> <a href=#3-modus class=md-nav__link> 3. Modus </a> </li> <li class=md-nav__item> <a href=#4-standar-deviasi class=md-nav__link> 4. Standar Deviasi </a> </li> <li class=md-nav__item> <a href=#5-varian class=md-nav__link> 5. Varian </a> <nav class=md-nav> <ul class=md-nav__list> <li class=md-nav__item> <a href=#6-skewness-kemiringan class=md-nav__link> 6. Skewness (Kemiringan) </a> </li> <li class=md-nav__item> <a href=#7-kuartil class=md-nav__link> 7. Kuartil </a> <nav class=md-nav> <ul class=md-nav__list> <li class=md-nav__item> <a href=#-kuartil-1-q1 class=md-nav__link> **-&gt;**Kuartil 1 (Q1) </a> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class=md-content> <article class="md-content__inner md-typeset"> <h1>Material</h1> <p>Nama : Widyasari</p> <p>NIM : 170411100032</p> <h2 id=1-mean><strong>1. Mean</strong><a class=headerlink href=#1-mean title="Permanent link">&para;</a></h2> <p><strong>Mean</strong> yaitu nilai Rata-rata yang didapatkan dari hasil penjumlahan seluruh nilai dari masing-masing data, lalu dibagi dengan banyaknya data yang ada.</p> <p><img alt="Hasil gambar untuk rumus mean" src=https://1.bp.blogspot.com/-dwOwrsJHsmk/WGp887MmqXI/AAAAAAAADE8/8lqADeeH4ws3KKdDU1cpqrs-6mcMj_i2QCLcB/s1600/Rumus-mean.jpg></p> <p><strong><em>code</em></strong></p> <div class=codehilite><pre><span></span>import pandas as dt
+df=dt.read_csv(&quot;rozdata.csv&quot;)
+df[&#39;Umur&#39;].describe()
+df[&#39;Tinggi Badan&#39;].describe()
+df[&#39;Berat Badan&#39;].describe()
+df[&#39;Ukuran Sepatu&#39;].describe()
+print(&quot;Rata-rata Umur&quot;,df[&#39;Umur&#39;].mean())
+print(&quot;Rata-rata Tinggi Badan&quot;,df[&#39;Tinggi Badan&#39;].mean())
+print(&quot;Rata-rata Berat Badan&quot;,df[&#39;Berat Badan&#39;].mean())
+print(&quot;Rata-rata Ukuran Sepatu&quot;,df[&#39;Ukuran Sepatu&#39;].mean())
+</pre></div> <p><strong><em>Output</em></strong></p> <div class=codehilite><pre><span></span>Rata-rata Umur 40.558232931726906
+Rata-rata Tinggi Badan 164.86144578313252
+Rata-rata Berat Badan 52.5722891566265
+Rata-rata Ukuran Sepatu 41.48795180722892
+</pre></div> <h2 id=2-median><strong>2. Median</strong><a class=headerlink href=#2-median title="Permanent link">&para;</a></h2> <p><strong>Median</strong> merupakan nilai tengah dari kumpulan data yang sudah diurutkan, jika jumlah data Ganjil maka Nilai Median yaitu satu nilai yang berada ditengah urutan, tetapi jika jumlah data Genap maka Mediannya yaitu hasil penjumlahan dua nilai yang berada ditengah urutan data, lalu kemudian hasilnya dibagi dua.</p> <p><img alt="Hasil gambar untuk rumus modus" src=https://rumus.co.id/wp-content/uploads/2018/11/gambar-rumus-median2.png></p> <p><strong><em>Code</em></strong></p> <div class=codehilite><pre><span></span>import pandas as dt
+<span class=nv>df</span><span class=o>=</span>dt.read_csv<span class=o>(</span><span class=s2>&quot;widata.csv&quot;</span><span class=o>)</span>
+df<span class=o>[</span><span class=s1>&#39;Umur&#39;</span><span class=o>]</span>.describe<span class=o>()</span>
+<span class=nv>a</span><span class=o>=(</span><span class=s2>&quot;Q2 Umur&quot;</span>,df<span class=o>[</span><span class=s1>&#39;Umur&#39;</span><span class=o>]</span>.median<span class=o>())</span>
+print <span class=o>(</span>a<span class=o>)</span>
+</pre></div> <p><strong><em>Output</em></strong></p> <div class=codehilite><pre><span></span><span class="l l-Scalar l-Scalar-Plain">(&#39;Q2 Umur&#39;, 41.0)</span>
+</pre></div> <h2 id=3-modus><strong>3. Modus</strong><a class=headerlink href=#3-modus title="Permanent link">&para;</a></h2> <p><strong>Modus</strong> yaitu data atau nilai yang sering muncul atau yang mempunyai jumlah frekuensi paling banyak.</p> <p><img alt="Hasil gambar untuk rumus modus" src=https://rumus.co.id/wp-content/uploads/2018/11/gambar-rumus-modus-2.png></p> <p><strong><em>Code</em></strong></p> <div class=codehilite><pre><span></span>import pandas as dt
+df=dt.read_csv(&quot;widata.csv&quot;)
+df[&#39;Umur&#39;].describe()
+df[&quot;Tinggi Badan&quot;].describe()
+df[&#39;Berat Badan&#39;].describe()
+df[&#39;Ukuran Sepatu&#39;].describe()
+print(&quot;Modus Umur            &quot;,df[&#39;Umur&#39;].mode())
+print(&quot;Modus Tinggi Badan    &quot;,df[&#39;Tinggi Badan&#39;].mode()) 
+print(&quot;Modus Berat Badan     &quot;,df[&#39;Berat Badan&#39;].mode())
+print(&quot;Modus Ukuran sepatu   &quot;,df[&#39;Ukuran Sepatu&#39;].mode())
+</pre></div> <p><strong><em>Output</em></strong></p> <div class=codehilite><pre><span></span>Modus Umur             0    34
+1    51
+2    54
+dtype: int64
+Modus Tinggi Badan     0    171
+1    175
+dtype: int64
+Modus Berat Badan      0    47
+dtype: int64
+Modus Ukuran sepatu    0    40
+dtype: int64
+</pre></div> <h2 id=4-standar-deviasi><strong>4. Standar Deviasi</strong><a class=headerlink href=#4-standar-deviasi title="Permanent link">&para;</a></h2> <p>Standar deviasi yaitu nilai statistik yang dimanfaatkan untuk menentukan bagaimana sebaran data dalam sampel, serta seberapa dekat titik data individu ke mean ataupun rata-rata nilai sampel.</p> <p><img alt=img src=https://rumusrumus.com/wp-content/uploads/2018/12/cc2.jpg></p> <p><strong><em>Code</em></strong></p> <div class=codehilite><pre><span></span>import pandas as dt
+df=dt.read_csv(&quot;widata.csv&quot;)
+df[&#39;Umur&#39;].describe()
+df[&#39;Tinggi Badan&#39;].describe()
+df[&#39;Berat Badan&#39;].describe()
+df[&#39;Ukuran Sepatu&#39;].describe()
+print(&quot;Standar deviasi Umur          :&quot;,df[&#39;Umur&#39;].std())
+print(&quot;Standar deviasi Tinggi Badan  :&quot;,df[&#39;Tinggi Badan&#39;].std())
+print(&quot;Standar deviasi Berat Badan   :&quot;,df[&#39;Berat Badan&#39;].std())
+print(&quot;Standar deviasi Ukuran Sepatu :&quot;,df[&#39;Ukuran Sepatu&#39;].std())
+</pre></div> <p><strong><em>Output</em></strong></p> <div class=codehilite><pre><span></span>Standar deviasi Umur          : 11.7003853179926
+Standar deviasi Tinggi Badan  : 8.8269114480857
+Standar deviasi Berat Badan   : 4.582772743309866
+Standar deviasi Ukuran Sepatu : 1.1316088783711435
+</pre></div> <h2 id=5-varian><strong>5. Varian</strong><a class=headerlink href=#5-varian title="Permanent link">&para;</a></h2> <p><strong>Varian</strong> adalah ukuran-ukuran keragaman (variasi) data statistik yang paling sering digunakan.</p> <p><strong><em>Code</em></strong></p> <div class=codehilite><pre><span></span>import pandas as dt
+df=dt.read_csv(&quot;widata.csv&quot;)
+df[&#39;Umur&#39;].describe()
+df[&quot;Tinggi Badan&quot;].describe()
+df[&#39;Berat Badan&#39;].describe()
+df[&#39;Ukuran Sepatu&#39;].describe()
+print(&quot;varian Umur          :&quot;,df[&#39;Umur&#39;].count())
+print(&quot;varian Tinggi Badan  :&quot;,df[&#39;Tinggi Badan&#39;].count())
+print(&quot;varian  Berat Badan  :&quot;,df[&#39;Berat Badan&#39;].count())
+print(&quot;varian Ukuran Sepatu :&quot;,df[&#39;Ukuran Sepatu&#39;].count())
+</pre></div> <p><strong><em>Output</em></strong></p> <div class=codehilite><pre><span></span>varian Umur          : 498
+varian Tinggi Badan  : 498
+varian  Berat Badan  : 498
+varian Ukuran Sepatu : 498
+</pre></div> <h3 id=6-skewness-kemiringan><strong>6. Skewness (Kemiringan)</strong><a class=headerlink href=#6-skewness-kemiringan title="Permanent link">&para;</a></h3> <p>Skewness adalah derajat ketidaksimetrisan suatu distribusi. Jika kurva frekuensi suatu distribusi memiliki ekor yang lebih memanjang ke kanan (dilihat dari meannya) maka dikatakan menceng kanan (positif) dan jika sebaliknya maka menceng kiri (negatif). Secara perhitungan, skewness adalah momen ketiga terhadap mean. Distribusi normal (dan distribusi simetris lainnya, misalnya distribusi t atau Cauchy) memiliki skewness 0 (nol).</p> <p><strong><em>Code</em></strong></p> <div class=codehilite><pre><span></span>import pandas as dt
+df=dt.read_csv(&quot;widata.csv&quot;)
+df[&#39;Umur&#39;].describe()
+df[&#39;Tinggi Badan&#39;].describe()
+df[&#39;Berat Badan&#39;].describe()
+df[&#39;Ukuran Sepatu&#39;].describe()
+print(&quot;Skewness Umur          :&quot;,df[&#39;Umur&#39;].skew())
+print(&quot;Skewness Tinggi Badan  :&quot;,df[&#39;Tinggi Badan&#39;].skew())
+print(&quot;Skewness  Berat Badan  :&quot;,df[&#39;Berat Badan&#39;].skew())
+print(&quot;Skewness Ukuran Sepatu :&quot;,df[&#39;Ukuran Sepatu&#39;].skew())
+</pre></div> <p><strong><em>Output</em></strong></p> <div class=codehilite><pre><span></span>Skewness Umur          : -0.07073065339154075
+Skewness Tinggi Badan  : -0.006355937698947297
+Skewness  Berat Badan  : -0.05979606826320327
+Skewness Ukuran Sepatu : -0.011844106877725483
+</pre></div> <h3 id=7-kuartil><strong>7. Kuartil</strong><a class=headerlink href=#7-kuartil title="Permanent link">&para;</a></h3> <p>Kuartil adalah nilai-nilai yang membagi data yang telah diurutkan kedalam empat bagian yang nilainya sama besar. Dalam menentukan letak kuartil data tunggal, anda harus melihat kondisi jumlah data (n) terlebih dahulu.</p> <h5 id=-kuartil-1-q1>**-&gt;**Kuartil 1 (Q1)<a class=headerlink href=#-kuartil-1-q1 title="Permanent link">&para;</a></h5> <p><strong><em>Code</em></strong></p> <div class=codehilite><pre><span></span>import pandas as dt
+df=dt.read_csv(&quot;widata.csv&quot;)
+df[&quot;Umur&quot;].describe()
+df[&quot;Tinggi Badan&quot;].describe()
+df[&quot;Berat Badan&quot;].describe()
+df[&quot;Ukuran Sepatu&quot;].describe()
+print(&quot;Q1 Umur :&quot;,df[&#39;Umur&#39;].quantile(0.25))
+print(&quot;Q1 Tinggi Badan :&quot;,df[&#39;Tinggi Badan&#39;].quantile(0.25))
+print(&quot;Q1 Berat Badan :&quot;,df[&#39;Berat Badan&#39;].quantile(0.25))
+print(&quot;Q1 Ukuran Sepatu :&quot;,df[&#39;Ukuran Sepatu&#39;].quantile(0.25))
+</pre></div> <p><strong><em>Output</em></strong> </p> <div class=codehilite><pre><span></span>Q1 Umur : 2.0
+Q1 Tinggi Badan : 3.0
+Q1 Berat Badan : 4.0
+Q1 Ukuran Sepatu : 4.0
+</pre></div> <p><strong>-&gt;Kuartil 2 (Q2)</strong></p> <p><strong><em>Code</em></strong></p> <div class=codehilite><pre><span></span>import pandas as dt
+df=dt.read_csv(&quot;widata.csv&quot;)
+df[&quot;Umur&quot;].describe()
+df[&quot;Tinggi Badan&quot;].describe()
+df[&quot;Berat Badan&quot;].describe()
+df[&quot;Ukuran Sepatu&quot;].describe()
+print(&quot;Q2 Umur :&quot;,df[&#39;Umur&#39;].quantile(0.50))
+print(&quot;Q2 Tinggi Badan :&quot;,df[&#39;Tinggi Badan&#39;].quantile(0.50))
+print(&quot;Q2 Berat Badan :&quot;,df[&#39;Berat Badan&#39;].quantile(0.50))
+print(&quot;Q2 Ukuran Sepatu :&quot;,df[&#39;Ukuran Sepatu&#39;].quantile(0.50))
+</pre></div> <p><strong><em>Output</em></strong></p> <div class=codehilite><pre><span></span>Q2 Umur : 4.0
+Q2 Tinggi Badan : 5.0
+Q2 Berat Badan : 6.0
+Q2 Ukuran Sepatu : 6.0
+</pre></div> <p><strong>-&gt;Kuartil 3 (Q3)</strong></p> <p><strong><em>Code</em></strong></p> <div class=codehilite><pre><span></span>import pandas as dt
+df=dt.read_csv(&quot;data.csv&quot;)
+df[&quot;Umur&quot;].describe()
+df[&quot;Tinggi Badan&quot;].describe()
+df[&quot;Berat Badan&quot;].describe()
+df[&quot;Ukuran Sepatu&quot;].describe()
+print(&quot;Q3 Umur :&quot;,df[&#39;Umur&#39;].quantile(0.75))
+print(&quot;Q3 Tinggi Badan :&quot;,df[&#39;Tinggi Badan&#39;].quantile(0.75))
+print(&quot;Q3 Berat Badan :&quot;,df[&#39;Berat Badan&#39;].quantile(0.75))
+print(&quot;Q3 Ukuran Sepatu :&quot;,df[&#39;Ukuran Sepatu&#39;].quantile(0.75))
+</pre></div> <p><strong><em>Output</em></strong></p> <div class=codehilite><pre><span></span>Q3 Umur : 6.0
+Q3 Tinggi Badan : 7.0
+Q3 Berat Badan : 8.0
+Q3 Ukuran Sepatu : 8.0
+</pre></div> </article> </div> </div> </main> <footer class=md-footer> <div class=md-footer-nav> <nav class="md-footer-nav__inner md-grid"> <a href=getting-started/ title="Getting started" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel=next> <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class=md-flex__ellipsis> <span class=md-footer-nav__direction> Next </span> Getting started </span> </div> <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i> </div> </a> </nav> </div> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-footer-copyright> <div class=md-footer-copyright__highlight> Copyright &copy; 2016 - 2019 Martin Donath </div> powered by <a href=https://www.mkdocs.org>MkDocs</a> and <a href=https://squidfunk.github.io/mkdocs-material/ > Material for MkDocs</a> </div> <div class=md-footer-social> <link rel=stylesheet href=assets/fonts/font-awesome.css> <a href=http://struct.cc class="md-footer-social__link fa fa-globe"></a> <a href=https://github.com/squidfunk class="md-footer-social__link fa fa-github-alt"></a> <a href=https://twitter.com/squidfunk class="md-footer-social__link fa fa-twitter"></a> <a href=https://linkedin.com/in/squidfunk class="md-footer-social__link fa fa-linkedin"></a> </div> </div> </div> </footer> </div> <script src=assets/javascripts/application.718059d6.js></script> <script>app.initialize({version:"1.0.4",url:{base:"."}})</script> </body> </html>
